@@ -1,7 +1,6 @@
 f = @(x) x^3 - 5*x - 2;
 df = @(x) 3*x^2 - 5;
 a = 1;
-%b = 10;
 n = 30 ;
 if df(a)~=0
  for i=1:n
@@ -12,6 +11,6 @@ if df(a)~=0
 
   endfor
 else
-  disp('No root is present between these numbers');
+  disp('Derivative of the function in the initial guess is zero');
   end;
 
