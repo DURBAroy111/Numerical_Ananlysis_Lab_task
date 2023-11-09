@@ -5,7 +5,7 @@ n = 35;
 if f(a) * f(b) <0
  for i=1:n
    c= (a+b)/2;
-   disp(c);
+    fprintf('C%d = %.4f\n',i,c)
    if f(a)*f(c)<0
      b= c;
 
