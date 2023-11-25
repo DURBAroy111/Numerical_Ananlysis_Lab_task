@@ -25,7 +25,7 @@ else
   end;
 
 % Plot the function and roots for visualization
-x = linspace(a, b, 100);
+x = 0:0.1:10;
 y = f(x);
 
 figure;
@@ -35,6 +35,7 @@ plot(roots, f(roots), 'ro', 'MarkerSize', 10); % Plot roots
 xlabel('Variable x');
 ylabel('Variable y');
 title('Bisection Method: Finding Roots');
+set(gca, 'xAxisLocation', 'origin');
 legend('Function', 'Roots');
 grid on;
 hold off;
